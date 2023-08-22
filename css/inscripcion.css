@@ -1,0 +1,90 @@
+#inscripciones__cabecera {
+    background-image: url('../assets/img/inscripciones__xs.png');
+}
+
+#inscripciones__desarrollo {
+    padding: 2rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+}
+
+#inscripciones__desarrollo__requisitos {
+    padding: 1rem 0;
+    width: 100%;
+}
+
+#inscripciones__desarrollo__requisitos ul {
+    margin: 0;
+    font-size: 1.15rem;
+}
+
+#inscripciones__desarrollo__img {
+    display: none;
+}
+
+#inscripciones__desarrollo__form{
+    text-align: center;
+}
+
+#inscripciones__desarrollo__form form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form__input {
+    width: 100%;
+    max-width: 450px;
+}
+
+#form__turno__container {
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#inscripciones__desarrollo__form textarea {
+    resize: none;
+    height: 150px;
+}
+
+#form__button {
+    margin-top: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+    #inscripciones__cabecera {
+        background-image: url('../assets/img/inscripciones__md.png');
+    }
+
+    #inscripciones__cabecera__descripcion {
+        right: 50%;
+        transform: translateX(50%);
+    }
+
+    #inscripciones__desarrollo__img {
+        display: inline-block;
+        background-image: url('../assets/img//inscripciones__desarrollo.webp');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #inscripciones__cabecera {
+        background-image: url('../assets/img/inscripciones__lg.webp');
+    }
+
+    #inscripciones__cabecera__descripcion {
+        right: 2rem;
+        transform: translateX(0);
+    }
+}

@@ -1,0 +1,72 @@
+#colaborar__cabecera {
+    background-image: url('../assets/img/colaborar__xs.png');
+}
+
+#colaborar__desarrollo {
+    padding: 2rem;
+}
+
+#colaborar__desarrollo p {
+    font-size: 1.15rem;
+    text-indent: 1rem;
+    text-align: center;
+}
+
+#postulate__form, #donar__form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form__input {
+    width: 100%;
+    max-width: 450px;
+}
+
+#postulate__form textarea {
+    resize: none;
+    height: 150px;
+}
+
+#postulate__form__button, #donar__form__button {
+    margin: 2rem 0;
+}
+
+#donar__checkboxes {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.donar__checkboxes__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 200px;
+}
+
+#donar__checkboxes label, #donar__checkboxes input {
+    margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+    #colaborar__cabecera {
+        background-image: url('../assets/img/colaborar__md.png');
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #colaborar__cabecera {
+        background-image: url('../assets/img/colaborar__lg.webp');
+    }
+
+    #colaborar__desarrollo p {
+        text-align: left;
+    }
+}

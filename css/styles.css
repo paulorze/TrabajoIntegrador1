@@ -1,0 +1,242 @@
+:root {
+    --primary-color: #71BF44;
+    --primary-color-dark: #1B2E10;
+    --primary-color-subtle: #C5E5B3;
+    --secondary-color: #0F75BC;
+    --secondary-color-subtle: #C6E5FA;
+    --grey-color: #dbdbdb;
+    --primary-fontfamily: 'Lato', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--primary-fontfamily);
+}
+
+body {
+    position: relative;
+}
+
+#nav {
+    z-index: 2;
+    position: sticky;
+    top: 0;
+    font-size: 1.75rem;
+    background-color: var(--primary-color);
+    min-height: 5rem;
+}
+
+#nav__logo {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    filter: drop-shadow(0 0 10px #121212);
+}
+
+#nav__logo__img {
+    height: 12vh;
+    transition: all 0.15s ease-in;
+}
+
+#nav__toggler {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+
+#nav__ul {
+    width: 100%;
+    justify-content: space-around;
+    padding-top: 12vh;
+}
+
+.nav-item {
+    text-align: center;
+}
+
+.active {
+    font-weight: bold;
+}
+
+#main {
+    padding-bottom: 2rem;
+    background-color: var(--primary-color-subtle);
+}
+
+footer {
+    background-color: var(--primary-color);
+    padding-top: 1rem;
+}
+
+footer h3 {
+    font-weight: bold;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+#footer__menu ul li {
+    padding: .5rem;
+}
+
+#footer__seguinos ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#footer__copyright {
+    width: 100vw;
+    margin-top: 2.5vh;
+    padding-bottom: 0.5vh;
+    text-align: center;
+}
+
+#whatsapp {
+    display: none;
+}
+
+.cabecera {
+    width: 100vw;
+    height: 50vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.cabecera__descripcion {
+    display: none;
+}
+
+h1 {
+    font-weight: 900;
+}
+
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .cabecera__descripcion {
+        display: inline-block;
+        position: absolute;
+        bottom: 0;
+        right: 2rem;
+        text-align: center;
+        animation-name: fade-in;
+        animation-delay: 0;
+        animation-timing-function: ease-in;
+        animation-iteration-count: 1;
+        animation-duration: 1s;
+    }
+    
+    .cabecera__descripcion p {
+        font-size: 2rem;
+    }
+    
+    .cabecera__descripcion mark {
+        padding: 0.5rem 1rem;
+        display: block;
+        background-color: var(--secondary-color);
+        color: var(--grey-color);
+    }
+    
+    .cabecera__descripcion strong {
+        padding: 0.5rem 1rem;
+        display: block;
+        background-color: var(--primary-color);
+        color: black;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #nav {
+        font-size: clamp(1.25rem, 4vw - 1rem, 2rem);
+    }
+    
+    #nav__logo__img:hover {
+        transform: scale(1.15) translateY(5%);
+    }
+
+    #nav__ul {
+        padding-top: 0;
+    }
+
+    #nav__ul li a {
+        border-bottom: 2px dotted transparent;
+    }
+
+    #nav__ul li a:hover {
+        border-bottom: 2px dotted var(--primary-color-subtle);
+    }
+
+    #nav__li__spacer {
+        width: 10vw;
+    }
+
+    #footer__menu ul li a {
+        border-bottom: 2px transparent;
+    }
+
+    #footer__menu ul li a:hover {
+        border-bottom: 2px dotted var(--primary-color-subtle);
+
+    }
+
+    #footer__seguinos ul li {
+        height: 4rem;
+        width: 4rem;
+        border-radius: 50%;
+    }
+
+    #footer__seguinos ul li:hover {
+        background-color: var(--primary-color-subtle);
+    }
+
+    #whatsapp {
+        display: block;
+        position: fixed;
+        right: 5vw;
+        bottom: 5vh;
+        width: 4rem;
+        height: 4rem;
+        transition: all .2s ease-in-out;
+    }
+
+    #whatsapp svg {
+        width: 100%;
+        height: 100%;
+    }
+
+    #whatsapp:hover {
+        transform: scale(1.1);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #footer__contactanos div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+}

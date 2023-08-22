@@ -1,0 +1,130 @@
+#proyecto__cabecera {
+    background-image: url('../assets/img/proyecto__xs.png');
+}
+
+#proyecto__desarrollo {
+    padding: 2rem;
+}
+
+#proyecto__desarrollo__img {
+    display: none;
+}
+
+#proyecto__desarrollo p {
+    line-height: 1.75rem;
+    text-indent: 1.5rem;
+    font-size: 1.15rem;
+}
+
+#proyecto_desarrollo__subtitulo strong:first-child {
+    background-color: var(--secondary-color);
+    color: var(--grey-color);
+    padding: .25rem;
+}
+
+#proyecto_desarrollo__subtitulo strong:last-child {
+    background-color: var(--primary-color);
+    padding: .25rem;
+}
+
+#proyecto__svg {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#proyecto__svg h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+#proyecto__svg1, #proyecto__svg2, #proyecto__svg3 {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.proyecto__svg__container {
+    width: 100px;
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.proyecto__svg__container img {
+    width: 100%;
+}
+
+#proyecto__desarrollo__frase {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 4rem;
+}
+
+#proyecto__desarrollo__frase p {
+    overflow: hidden;
+    margin: 0 auto;
+    line-height: 3rem;
+    font-size: 2rem;
+    text-indent: 0;
+}
+
+#proyecto__desarrollo__frase__strong {
+    background-color: transparent;
+    font-weight: 400;
+}
+
+#proyecto__desarrollo__frase__mark {
+    background-color: var(--secondary-color);
+    color: var(--grey-color);
+    font-weight: 900;
+}
+
+.mark__vacio {
+    padding: 0;
+}
+
+.mark__terminado {
+    padding: 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+    #proyecto__cabecera {
+        background-image: url('../assets/img/proyecto__md.png');
+    }
+
+    #proyecto__cabecera__descripcion {
+        right: 50%;
+        transform: translateX(50%);
+        min-width: 40rem;
+    }
+
+    #proyecto__desarrollo__img {
+        display: inline-block;
+        background-image: url(../assets/img/proyecto__desarrollo.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    #proyecto__desarrollo__img img {
+        height: 100%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #proyecto__cabecera {
+        background-image: url('../assets/img/proyecto__lg.png');
+    }
+
+    #proyecto__desarrollo__img {
+        background-size: contain;
+    }
+
+}

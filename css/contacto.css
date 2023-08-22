@@ -1,0 +1,69 @@
+#contacto__cabecera {
+    background-image: url('../assets/img/contacto__xs.png');
+}
+
+#contacto__desarrollo {
+    padding: 2rem;
+}
+
+#contacto__form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form__input {
+    width: 100%;
+    max-width: 450px;
+}
+
+#contacto__form textarea {
+    resize: none;
+    height: 150px;
+}
+
+#form__button {
+    margin: 2rem 0;
+}
+
+#contacto__direccion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.25rem;
+}
+
+
+@media screen and (min-width: 768px) {
+    #contacto__cabecera {
+        background-image: url('../assets/img/contacto__md.png');
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #contacto__cabecera {
+        background-image: url('../assets/img/contacto__lg.webp');
+    }
+
+    #contacto__direccion {
+        padding-top: 2rem;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-around;
+    }
+
+    #contacto__direccion iframe {
+        width: 15rem;
+        height: 15rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #contacto__direccion iframe {
+        width: 20rem;
+        height: 20rem;
+    }
+}

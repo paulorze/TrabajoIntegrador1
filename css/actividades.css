@@ -1,0 +1,69 @@
+#actividades__cabecera {
+    background-image: url('../assets/img/actividades__xs.png');
+}
+
+h2 {
+    font-weight: 900;
+    margin-left: 5vw;
+}
+
+#actividades__desarrollo {
+    padding: 0;
+}
+
+#actividades__desarrollo .row {
+    padding: 2rem;
+}
+
+.azul {
+    display: inline-block;
+    padding: .5rem;
+    background-color: var(--secondary-color);
+    color: var(--grey-color);
+}
+
+.verde {
+    display: inline-block;
+    padding: .5rem;
+    background-color: var(--primary-color);
+}
+
+#actividades__desarrollo p {
+    font-size: 1.15rem;
+    text-indent: 1rem;
+    text-align: justify;
+}
+
+.celeste {
+    background-color: var(--secondary-color-subtle);
+    margin: 2rem 0;
+}
+
+#splide1, #splide2, #splide3, #splide4, #splide5 {
+    margin-bottom: 1rem;
+}
+
+.splide__slide {
+    opacity: .8;
+}
+
+.splide__arrow {
+    background-color: var(--secondary-color);
+}
+
+.is-active {
+    opacity: 1;
+    border: none !important;
+}
+
+@media screen and (min-width: 768px) {
+    #actividades__cabecera {
+        background-image: url('../assets/img/actividades__md.png');
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #actividades__cabecera {
+        background-image: url('../assets/img/actividades__lg.webp');
+    }
+}
