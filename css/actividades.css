@@ -43,6 +43,10 @@ h2 {
     margin-bottom: 1rem;
 }
 
+.splide__imagen {
+    min-height: 300px;
+}
+
 .splide__slide {
     opacity: .8;
 }
@@ -59,6 +63,10 @@ h2 {
 @media screen and (min-width: 768px) {
     #actividades__cabecera {
         background-image: url('../assets/img/actividades__md.png');
+    }
+
+    .texto {
+        padding-right: 2rem;
     }
 }
 
